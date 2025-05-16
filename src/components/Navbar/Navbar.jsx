@@ -7,6 +7,7 @@ import { IoCartOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
     <div>
+
             <div style={{'borderBottom': '1px solid #E5E5E5'}} className="navbar mt-10 pb-10">
                 <div className="container w-7xl mx-auto flex items-center justify-between">
                         <div className="navbar__left">
@@ -30,7 +31,31 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
+      <nav>
+        
+        <div class="bg-black text-stone-200 font-sans h-[48px] text-[16px]">
+          <div class="max-w-screen-xl mx-auto flex justify-center items-center px-4 py-2 relative">
+            <div class="text-center">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+              <a href="#" class="font-bold underline ml-8">ShopNow</a>
+              </div>
+            <div class="hidden sm:flex items-center space-x-1 cursor-pointer select-none absolute right-4">
+            <select name="" id="" class="bg-black outline-none cursor-pointer">
+              <option value="">English</option>
+              <option value="">Russian</option>
+              <option value="">Uzbekistan</option>
+            </select>
+            <i class="fas fa-chevron-down text-xs"></i>
+      </div>
+    </div>
+        </div>
+</nav>
+
+       
+      
+    </div>
   )
 }
 
