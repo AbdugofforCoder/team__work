@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import signUp from './Pages/signUp'
 
 const App = () => {
   return (
     <div>
       <Navbar />
-        <h1 className="text-red-500">solom</h1>
+      <signUp/>
+      
       <Footer />
     </div>
   )

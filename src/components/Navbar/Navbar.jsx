@@ -1,19 +1,40 @@
 import React from 'react'
+// icons
+import { IoSearch } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
     <div>
+
+            <div style={{'borderBottom': '1px solid #E5E5E5'}} className="navbar mt-10 pb-10">
+                <div className="container w-7xl mx-auto flex items-center justify-between">
+                        <div className="navbar__left">
+                            <h1 className='text-2xl font-medium'>Exclusive</h1>
+                        </div>
+                        <div className="navbar__left flex gap-10 font-medium">  
+                            <a href="">Home</a>
+                            <a href="">Contact</a>
+                            <a href="">About</a>
+                            <a href="">Sign Up</a>
+                        </div>
+                        <div className="navbar__corner flex gap-15">
+                            <div className="inputs flex items-center gap-5 bg-[#F5F5F5] pl-3 pr-3 rounded-sm py-3">
+                                <input className=' border-none rounded-2xl placeholder-gray-400 text-black text-[14px] focus:outline-none'  type="text" placeholder='What are you looking for?'/>
+                                <IoSearch className='text-xl' />
+                            </div>
+                            <div className="likes flex gap-5 items-center">
+                                <FaRegHeart className='text-xl' />
+                                <IoCartOutline className='text-2xl' />
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
       <nav>
-        {/* <div className="nav-top flex items-center bg-black h-[48px] text-stone-200 text-[14px] gap-[20px]" >
-          <p className=''>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-          <a href="" className='border-b bottom border-stone-200'>ShopNow</a>
-          <select name="" id="">
-            <option value="">English</option>
-            <option value="">Russian</option>
-            <option value="">Uzbek</option>
-            <option value="">Turkish</option>
-          </select>
-        </div> */}
+        
         <div class="bg-black text-stone-200 font-sans h-[48px] text-[16px]">
           <div class="max-w-screen-xl mx-auto flex justify-center items-center px-4 py-2 relative">
             <div class="text-center">
@@ -30,40 +51,10 @@ const Navbar = () => {
       </div>
     </div>
         </div>
+</nav>
 
-        {/* <div className="nav-bottom ">
-          <div className="container">
-            <div className="logo">
-              <h1>Exclusive</h1>
-            </div>
-            <div className="links">
-              <a href="">Home</a>
-              <a href="">Contact</a>
-              <a href="">About</a>
-              <a href="">Sign Up</a>
-            </div>
-            <form class="w-full max-w-md bg-stone-300 rounded-lg flex items-center px-4">
-              <label for="search" class="sr-only">Search</label>
-                <div class="relative">
-                  <input
-                    id="search"
-                    name="search"
-                    type="search"
-                    placeholder="What are you looking for?"
-                    class="w-full rounded-lg py-3 px-4 pr-12 text-stone-900 text-sm font-sans placeholder-stone-900 focus:outline-none"
-                  />
-                  <button
-                      type="submit"
-                      class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-900"
-                      aria-label="Search"
-                    >
-                      <i class="fas fa-search"></i>
-                  </button>
-                </div>
-            </form>
-          </div>
-        </div> */}
-      </nav>
+       
+      
     </div>
   )
 }
